@@ -1,10 +1,22 @@
-class Car(){
-      void Car(){
-        System.out.println("created");
-      }
+abstract class Shape {
+    abstract void draw();
+
+    void message() {
+        System.out.println("Hello");
+    }
 }
-      public class code8{
-        Car(String name){
-            this.name=name;
-        }
-      }
+
+class Circle extends Shape {
+    @Override
+    void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+
+    class code7{
+    public static void main(String[] args) {
+        Circle cl = new Circle();
+        cl.draw();
+        cl.message();
+    }
+}

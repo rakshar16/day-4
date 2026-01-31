@@ -1,19 +1,14 @@
-class Student{
-    int id;
-    String name;
-        Student(int i,String name){
-            id=i;
-            this.name=name;
-        }
-   void display() {
-         System.out.println(id+" "+name);
-       }
+interface payment{
+    void pay();
+}
+class UPI implements payment{
+public void pay(){
+    System.out.println("paying");
+}
+}
+class code8{
+    public static void main(String[] args) {
+        UPI Gpay=new UPI();
+        Gpay.pay();
     }
-    class code8{
-        public static void main(String[] args) {
-            Student s1=new Student(1,"prathibha");
-            Student s2=new Student(2,"raksha");
-            s1.display();
-            s2.display();
-        }
-    }
+}
